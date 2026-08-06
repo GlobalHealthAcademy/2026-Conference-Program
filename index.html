@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 Global Health Bridge – Interactive Program</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>2026 Global Health Bridge</h1>
+      <div class="subtitle">Interactive Program</div>
+      <div class="meta">February 2 – February 3, 2026 <br> Danbury Hospital, Connecticut, USA <br> Location: Creasy
+        Auditorium
+      </div>
+    </div>
+
+    <div class="day-tabs" id="dayTabs">
+      <button class="day-tab active" data-day="all">All Days</button>
+      <button class="day-tab" data-day="0">Mon · Feb 2</button>
+      <button class="day-tab" data-day="1">Tue · Feb 3</button>
+    </div>
+
+    <div class="controls">
+      <div class="controls-row">
+        <div class="search-box">
+          <div class="search-input-wrapper">
+            <div class="search-primary">
+              <input type="text" id="searchInput" placeholder="Search sessions, speakers, topics..." autocomplete="off">
+              <span class="search-icon">🔍</span>
+              <div class="autocomplete" id="autocomplete"></div>
+            </div>
+            <div class="search-mode-toggle">
+              <button class="search-mode-btn active" data-mode="all" type="button">All</button>
+              <button class="search-mode-btn" data-mode="sessions" type="button">Sessions</button>
+              <button class="search-mode-btn" data-mode="people" type="button">Speakers</button>
+            </div>
+            <button class="clear-search-btn" id="clearSearchBtn" type="button" style="display: none;">Clear</button>
+          </div>
+        </div>
+        <div class="filters-row">
+          <select class="filter-select" id="typeFilter">
+            <option value="">All Types</option>
+          </select>
+          <select class="filter-select" id="roomFilter">
+            <option value="">All Rooms</option>
+          </select>
+          <select class="filter-select" id="speakerFilter">
+            <option value="">All Speakers</option>
+          </select>
+          <button class="clear-filters-btn" id="clearFiltersBtn" type="button">Clear Filters</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="results-count" id="resultsCount"></div>
+
+    <div id="listView" class="sessions-container"></div>
+  </div>
+
+  <script src="js/schedule.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
