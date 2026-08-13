@@ -62,11 +62,10 @@ const sessions = [
     id: 'mon-1',
     day: 0,
     date: '2026-02-02',
-    start: '08:00',
-    end: '08:15',
+    start: '08:30',
+    end: '09:00',
     type: 'Special',
     title: 'Welcome and Introductions',
-    subtitle: 'Lead: Aparna Oltikar',
     moderator: '',
     speakers: ['Aparna Oltikar'],
     room: 'Creasy Auditorium'
